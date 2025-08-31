@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Uygulamanın ana renk paleti -->
+    <color name="primary">#f43f51</color> <!-- Canlı kırmızı -->
+    <color name="primary_variant">#d47f8b</color> <!-- Açık kırmızı/pembe -->
+    <color name="secondary">#0e323d</color> <!-- Koyu mavi/yeşil -->
+    <color name="secondary_variant">#738179</color> <!-- Gri-yeşil -->
+    <color name="background">#e3c5a5</color> <!-- Açık bej -->
+    <color name="surface">#fffaf7</color> <!-- Çok açık bej (background'un biraz açığı) -->
+    <color name="surface_variant">#f5e7d7</color> <!-- Açık bej varyantı -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#0e323d</color>
+    <color name="on_surface">#0e323d</color>
+    <color name="on_surface_variant">#738179</color>
+    <color name="error">#f43f51</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_light">#FF8A80</color> <!-- Açık kırmızı -->
+    
+    <!-- Toast ve Snackbar renkleri -->
+    <color name="success">#4CAF50</color> <!-- Yeşil -->
+    <color name="on_success">#FFFFFF</color>
+    <color name="warning">#FF9800</color> <!-- Turuncu -->
+    <color name="on_warning">#FFFFFF</color>
+    <color name="surface_light">#fffaf7</color>
+    <color name="surface_dark">#1c1b1f</color>
+    <color name="on_surface_light">#0e323d</color>
+    <color name="on_surface_dark">#e6e1e5</color>
+    
+    <!-- Splash -->
+    <color name="splash_background">#8B0000</color>
+    <color name="splash_indicator">#FFFFFF</color>
+</resources>

@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- HesApp monogram: stylized H inside a rounded card -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M16,24a12,12 0 0 1 12,-12h52a12,12 0 0 1 12,12v60a12,12 0 0 1 -12,12h-52a12,12 0 0 1 -12,-12z"/>
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M34,30h8v48h-8z"/>
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M66,30h8v48h-8z"/>
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M42,52h24v8h-24z"/>
+</vector>
