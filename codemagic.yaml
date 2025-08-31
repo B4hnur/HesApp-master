@@ -1,14 +1,19 @@
 workflows:
   android-workflow:
-    name: Android Kotlin Build
+    name: Android Workflow
     max_build_duration: 60
     environment:
       vars:
         ANDROID_HOME: /opt/android/sdk
+      flutter: none
     scripts:
       - name: Checkout code
         script: git clone $CM_GIT_REPOSITORY $CM_BUILD_DIR
+      - name: Navigate to project
+        script: cd $CM_BUILD_DIR
+      - name: Make Gradle executable
+        script: chmod +x ./gradlew
       - name: Build Debug APK
         script: ./gradlew assembleDebug
     artifacts:
-      - app/build/outputs/apk/debug/app-debug.apk
+      - build/app/outputs/**/*.apk
