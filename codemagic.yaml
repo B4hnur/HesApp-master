@@ -1,0 +1,13 @@
+workflows:
+  android-workflow:
+    name: Android Workflow
+    max_build_duration: 60
+    environment:
+      flutter: none
+      vars:
+        BUILD_TYPE: release
+    scripts:
+      - name: Gradle Build
+        script: ./gradlew assembleRelease
+    artifacts:
+      - build/app/outputs/apk/release/app-release.apk
