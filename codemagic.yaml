@@ -1,13 +1,21 @@
 workflows:
   android-workflow:
-    name: Android Workflow
+    name: Android Kotlin Build
     max_build_duration: 60
     environment:
-      flutter: none
       vars:
-        BUILD_TYPE: release
+        ANDROID_HOME: /opt/android/sdk
+      node: none
+      flutter: none
+      cocoapods: none
     scripts:
-      - name: Gradle Build
-        script: ./gradlew assembleRelease
+      - name: Checkout code
+        script: git clone $CM_GIT_REPOSITORY $CM_BUILD_DIR
+      - name: Build APK
+        script: ./gradlew assembleDebug
     artifacts:
-      - build/app/outputs/apk/release/app-release.apk
+      - app/build/outputs/apk/debug/app-debug.apk
+    publishing:
+      email:
+        recipients:
+          - behnur98@gmail.com
